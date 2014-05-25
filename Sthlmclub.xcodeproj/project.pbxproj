@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A9F241B1931585E001ED445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F241A1931585E001ED445 /* Foundation.framework */; };
+		5A9F241D1931585E001ED445 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F241C1931585E001ED445 /* CoreGraphics.framework */; };
+		5A9F241F1931585E001ED445 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F241E1931585E001ED445 /* UIKit.framework */; };
+		5A9F24251931585E001ED445 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F24231931585E001ED445 /* InfoPlist.strings */; };
+		5A9F24271931585E001ED445 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F24261931585E001ED445 /* main.m */; };
+		5A9F242B1931585E001ED445 /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F242A1931585E001ED445 /* SCAppDelegate.m */; };
+		5A9F242E1931585E001ED445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F242C1931585E001ED445 /* Main.storyboard */; };
+		5A9F24311931585E001ED445 /* SCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F24301931585E001ED445 /* SCMasterViewController.m */; };
+		5A9F24341931585E001ED445 /* SCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F24331931585E001ED445 /* SCDetailViewController.m */; };
+		5A9F24361931585E001ED445 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F24351931585E001ED445 /* Images.xcassets */; };
+		5A9F243D1931585F001ED445 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F243C1931585F001ED445 /* XCTest.framework */; };
+		5A9F243E1931585F001ED445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F241A1931585E001ED445 /* Foundation.framework */; };
+		5A9F243F1931585F001ED445 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F241E1931585E001ED445 /* UIKit.framework */; };
+		5A9F24471931585F001ED445 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F24451931585F001ED445 /* InfoPlist.strings */; };
+		5A9F24491931585F001ED445 /* SthlmclubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F24481931585F001ED445 /* SthlmclubTests.m */; };
+		5A9F245419316D6C001ED445 /* SCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F245319316D6C001ED445 /* SCEvent.m */; };
+		5A9F24591931700C001ED445 /* SCCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F24581931700C001ED445 /* SCCommunicator.m */; };
+		5A9F245C19317B04001ED445 /* SCEventBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F245B19317B04001ED445 /* SCEventBuilder.m */; };
+		5A9F24601931802B001ED445 /* SCEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F245F1931802B001ED445 /* SCEventManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A9F24401931585F001ED445 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9F240F1931585E001ED445 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A9F24161931585E001ED445;
+			remoteInfo = Sthlmclub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A9F24171931585E001ED445 /* Sthlmclub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sthlmclub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9F241A1931585E001ED445 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A9F241C1931585E001ED445 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A9F241E1931585E001ED445 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A9F24221931585E001ED445 /* Sthlmclub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sthlmclub-Info.plist"; sourceTree = "<group>"; };
+		5A9F24241931585E001ED445 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A9F24261931585E001ED445 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A9F24281931585E001ED445 /* Sthlmclub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sthlmclub-Prefix.pch"; sourceTree = "<group>"; };
+		5A9F24291931585E001ED445 /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		5A9F242A1931585E001ED445 /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		5A9F242D1931585E001ED445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A9F242F1931585E001ED445 /* SCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMasterViewController.h; sourceTree = "<group>"; };
+		5A9F24301931585E001ED445 /* SCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMasterViewController.m; sourceTree = "<group>"; };
+		5A9F24321931585E001ED445 /* SCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDetailViewController.h; sourceTree = "<group>"; };
+		5A9F24331931585E001ED445 /* SCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDetailViewController.m; sourceTree = "<group>"; };
+		5A9F24351931585E001ED445 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A9F243B1931585F001ED445 /* SthlmclubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SthlmclubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9F243C1931585F001ED445 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5A9F24441931585F001ED445 /* SthlmclubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SthlmclubTests-Info.plist"; sourceTree = "<group>"; };
+		5A9F24461931585F001ED445 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A9F24481931585F001ED445 /* SthlmclubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SthlmclubTests.m; sourceTree = "<group>"; };
+		5A9F245219316D6C001ED445 /* SCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCEvent.h; path = Models/SCEvent.h; sourceTree = "<group>"; };
+		5A9F245319316D6C001ED445 /* SCEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCEvent.m; path = Models/SCEvent.m; sourceTree = "<group>"; };
+		5A9F245619316F2C001ED445 /* SCCommunicatorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCommunicatorDelegate.h; sourceTree = "<group>"; };
+		5A9F24571931700C001ED445 /* SCCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommunicator.h; sourceTree = "<group>"; };
+		5A9F24581931700C001ED445 /* SCCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommunicator.m; sourceTree = "<group>"; };
+		5A9F245A19317B04001ED445 /* SCEventBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCEventBuilder.h; sourceTree = "<group>"; };
+		5A9F245B19317B04001ED445 /* SCEventBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCEventBuilder.m; sourceTree = "<group>"; };
+		5A9F245D19317F14001ED445 /* SCEventManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCEventManagerDelegate.h; sourceTree = "<group>"; };
+		5A9F245E1931802B001ED445 /* SCEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCEventManager.h; sourceTree = "<group>"; };
+		5A9F245F1931802B001ED445 /* SCEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCEventManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A9F24141931585E001ED445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9F241D1931585E001ED445 /* CoreGraphics.framework in Frameworks */,
+				5A9F241F1931585E001ED445 /* UIKit.framework in Frameworks */,
+				5A9F241B1931585E001ED445 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9F24381931585F001ED445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9F243D1931585F001ED445 /* XCTest.framework in Frameworks */,
+				5A9F243F1931585F001ED445 /* UIKit.framework in Frameworks */,
+				5A9F243E1931585F001ED445 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A9F240E1931585E001ED445 = {
+			isa = PBXGroup;
+			children = (
+				5A9F24201931585E001ED445 /* Sthlmclub */,
+				5A9F24421931585F001ED445 /* SthlmclubTests */,
+				5A9F24191931585E001ED445 /* Frameworks */,
+				5A9F24181931585E001ED445 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A9F24181931585E001ED445 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F24171931585E001ED445 /* Sthlmclub.app */,
+				5A9F243B1931585F001ED445 /* SthlmclubTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A9F24191931585E001ED445 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F241A1931585E001ED445 /* Foundation.framework */,
+				5A9F241C1931585E001ED445 /* CoreGraphics.framework */,
+				5A9F241E1931585E001ED445 /* UIKit.framework */,
+				5A9F243C1931585F001ED445 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A9F24201931585E001ED445 /* Sthlmclub */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F245619316F2C001ED445 /* SCCommunicatorDelegate.h */,
+				5A9F24571931700C001ED445 /* SCCommunicator.h */,
+				5A9F24581931700C001ED445 /* SCCommunicator.m */,
+				5A9F245A19317B04001ED445 /* SCEventBuilder.h */,
+				5A9F245B19317B04001ED445 /* SCEventBuilder.m */,
+				5A9F245D19317F14001ED445 /* SCEventManagerDelegate.h */,
+				5A9F245E1931802B001ED445 /* SCEventManager.h */,
+				5A9F245F1931802B001ED445 /* SCEventManager.m */,
+				5A9F245519316D71001ED445 /* Models */,
+				5A9F24291931585E001ED445 /* SCAppDelegate.h */,
+				5A9F242A1931585E001ED445 /* SCAppDelegate.m */,
+				5A9F242C1931585E001ED445 /* Main.storyboard */,
+				5A9F242F1931585E001ED445 /* SCMasterViewController.h */,
+				5A9F24301931585E001ED445 /* SCMasterViewController.m */,
+				5A9F24321931585E001ED445 /* SCDetailViewController.h */,
+				5A9F24331931585E001ED445 /* SCDetailViewController.m */,
+				5A9F24351931585E001ED445 /* Images.xcassets */,
+				5A9F24211931585E001ED445 /* Supporting Files */,
+			);
+			path = Sthlmclub;
+			sourceTree = "<group>";
+		};
+		5A9F24211931585E001ED445 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F24221931585E001ED445 /* Sthlmclub-Info.plist */,
+				5A9F24231931585E001ED445 /* InfoPlist.strings */,
+				5A9F24261931585E001ED445 /* main.m */,
+				5A9F24281931585E001ED445 /* Sthlmclub-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A9F24421931585F001ED445 /* SthlmclubTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F24481931585F001ED445 /* SthlmclubTests.m */,
+				5A9F24431931585F001ED445 /* Supporting Files */,
+			);
+			path = SthlmclubTests;
+			sourceTree = "<group>";
+		};
+		5A9F24431931585F001ED445 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F24441931585F001ED445 /* SthlmclubTests-Info.plist */,
+				5A9F24451931585F001ED445 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A9F245519316D71001ED445 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F245219316D6C001ED445 /* SCEvent.h */,
+				5A9F245319316D6C001ED445 /* SCEvent.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A9F24161931585E001ED445 /* Sthlmclub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A9F244C1931585F001ED445 /* Build configuration list for PBXNativeTarget "Sthlmclub" */;
+			buildPhases = (
+				5A9F24131931585E001ED445 /* Sources */,
+				5A9F24141931585E001ED445 /* Frameworks */,
+				5A9F24151931585E001ED445 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sthlmclub;
+			productName = Sthlmclub;
+			productReference = 5A9F24171931585E001ED445 /* Sthlmclub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A9F243A1931585F001ED445 /* SthlmclubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A9F244F1931585F001ED445 /* Build configuration list for PBXNativeTarget "SthlmclubTests" */;
+			buildPhases = (
+				5A9F24371931585F001ED445 /* Sources */,
+				5A9F24381931585F001ED445 /* Frameworks */,
+				5A9F24391931585F001ED445 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A9F24411931585F001ED445 /* PBXTargetDependency */,
+			);
+			name = SthlmclubTests;
+			productName = SthlmclubTests;
+			productReference = 5A9F243B1931585F001ED445 /* SthlmclubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A9F240F1931585E001ED445 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jonatan Dahl";
+				TargetAttributes = {
+					5A9F243A1931585F001ED445 = {
+						TestTargetID = 5A9F24161931585E001ED445;
+					};
+				};
+			};
+			buildConfigurationList = 5A9F24121931585E001ED445 /* Build configuration list for PBXProject "Sthlmclub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A9F240E1931585E001ED445;
+			productRefGroup = 5A9F24181931585E001ED445 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A9F24161931585E001ED445 /* Sthlmclub */,
+				5A9F243A1931585F001ED445 /* SthlmclubTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A9F24151931585E001ED445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9F24361931585E001ED445 /* Images.xcassets in Resources */,
+				5A9F24251931585E001ED445 /* InfoPlist.strings in Resources */,
+				5A9F242E1931585E001ED445 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9F24391931585F001ED445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9F24471931585F001ED445 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A9F24131931585E001ED445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9F24311931585E001ED445 /* SCMasterViewController.m in Sources */,
+				5A9F242B1931585E001ED445 /* SCAppDelegate.m in Sources */,
+				5A9F24271931585E001ED445 /* main.m in Sources */,
+				5A9F245C19317B04001ED445 /* SCEventBuilder.m in Sources */,
+				5A9F24341931585E001ED445 /* SCDetailViewController.m in Sources */,
+				5A9F24591931700C001ED445 /* SCCommunicator.m in Sources */,
+				5A9F24601931802B001ED445 /* SCEventManager.m in Sources */,
+				5A9F245419316D6C001ED445 /* SCEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9F24371931585F001ED445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9F24491931585F001ED445 /* SthlmclubTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A9F24411931585F001ED445 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A9F24161931585E001ED445 /* Sthlmclub */;
+			targetProxy = 5A9F24401931585F001ED445 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A9F24231931585E001ED445 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A9F24241931585E001ED445 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5A9F242C1931585E001ED445 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A9F242D1931585E001ED445 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A9F24451931585F001ED445 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A9F24461931585F001ED445 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A9F244A1931585F001ED445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A9F244B1931585F001ED445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A9F244D1931585F001ED445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sthlmclub/Sthlmclub-Prefix.pch";
+				INFOPLIST_FILE = "Sthlmclub/Sthlmclub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5A9F244E1931585F001ED445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sthlmclub/Sthlmclub-Prefix.pch";
+				INFOPLIST_FILE = "Sthlmclub/Sthlmclub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5A9F24501931585F001ED445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sthlmclub.app/Sthlmclub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sthlmclub/Sthlmclub-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SthlmclubTests/SthlmclubTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5A9F24511931585F001ED445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sthlmclub.app/Sthlmclub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sthlmclub/Sthlmclub-Prefix.pch";
+				INFOPLIST_FILE = "SthlmclubTests/SthlmclubTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A9F24121931585E001ED445 /* Build configuration list for PBXProject "Sthlmclub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9F244A1931585F001ED445 /* Debug */,
+				5A9F244B1931585F001ED445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A9F244C1931585F001ED445 /* Build configuration list for PBXNativeTarget "Sthlmclub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9F244D1931585F001ED445 /* Debug */,
+				5A9F244E1931585F001ED445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A9F244F1931585F001ED445 /* Build configuration list for PBXNativeTarget "SthlmclubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9F24501931585F001ED445 /* Debug */,
+				5A9F24511931585F001ED445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A9F240F1931585E001ED445 /* Project object */;
+}
