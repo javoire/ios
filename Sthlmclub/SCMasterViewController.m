@@ -35,17 +35,22 @@
     _manager.communicator.delegate = _manager;
     _manager.delegate = self;
     
-    self.startFetchingEvents;
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(startFetchingGroups:)
-//                                                 name:@"kCLAuthorizationStatusAuthorized"
-//                                               object:nil];
+    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg.jpg"]];
+    [tempImageView setFrame:self.tableView.frame];
     
-	// Do any additional setup after loading the view, typically from a nib.
-//    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-//
-//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-//    self.navigationItem.rightBarButtonItem = addButton;
+    self.tableView.backgroundView = tempImageView;
+//    [tempImageView release];
+//    for (NSString* family in [UIFont familyNames])
+//    {
+//        NSLog(@"%@", family);
+//        
+//        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+//        {
+//            NSLog(@"  %@", name);
+//        }
+//    }
+    
+    self.startFetchingEvents;
 }
 
 - (void)startFetchingEvents
@@ -77,36 +82,18 @@
     return _events.count;
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    DetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-//    
-//    SCEvent *event = _groups[indexPath.row];
-//    [cell.nameLabel setText:event.name];
-//    
-//    return cell;
-//}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
     SCEvent *event = _events[indexPath.row];
     cell.textLabel.text = event.name;
+    cell.detailTextLabel.text = event.description;
+    [[cell textLabel] setFont:[UIFont fontWithName:@"Oswald-Bold" size:20]];
+    [[cell detailTextLabel] setFont:[UIFont fontWithName:@"OpenSans-Light" size:12]];
     return cell;
 }
 
-//
-//
-//- (void)insertNewObject:(id)sender
-//{
-//    if (!_events) {
-//        _events = [[NSMutableArray alloc] init];
-//    }
-//    [_events insertObject:[NSDate date] atIndex:0];
-//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-//    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-//}
 //
 //#pragma mark - Table View
 //
@@ -152,22 +139,21 @@
 //}
 //*/
 //
-///*
-//// Override to support conditional rearranging of the table view.
-//- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Return NO if you do not want the item to be re-orderable.
-//    return YES;
-//}
-//*/
-//
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        NSDate *object = _events[indexPath.row];
-//        [[segue destinationViewController] setDetailItem:object];
-//    }
-//}
+
+// Override to support conditional rearranging of the table view.
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the item to be re-orderable.
+    return NO;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        SCEvent *event = _events[indexPath.row];
+        [[segue destinationViewController] setDetailItem:event];
+    }
+}
 
 @end

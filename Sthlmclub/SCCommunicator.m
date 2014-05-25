@@ -13,8 +13,8 @@
 
 - (void)fetchEvents
 {
-//    NSString *urlAsString = @"http://sthlmclub.se/api/events";
-    NSString *urlAsString = @"http://0.0.0.0:3000/api/events";
+    NSString *urlAsString = @"http://sthlmclub.se/api/events";
+//    NSString *urlAsString = @"http://0.0.0.0:3000/api/events";
     NSURL *url = [[NSURL alloc] initWithString:urlAsString];
     NSLog(@"%@", urlAsString);
     

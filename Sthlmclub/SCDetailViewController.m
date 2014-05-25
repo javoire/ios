@@ -31,7 +31,8 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.eventDescriptionLabel.text = [self.detailItem description];
+        self.eventNameLabel.text = [self.detailItem name];
     }
 }
 
@@ -39,6 +40,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.eventDescriptionLabel.numberOfLines = 0;
+    self.eventNameLabel.numberOfLines = 0;
+
+    [self.eventNameLabel setFont:[UIFont fontWithName:@"Oswald-Bold" size:20]];
+    [self.eventDescriptionLabel setFont:[UIFont fontWithName:@"OpenSans-Light" size:12]];
+
     [self configureView];
 }
 
