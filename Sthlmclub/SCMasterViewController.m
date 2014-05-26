@@ -35,10 +35,10 @@
     _manager.communicator.delegate = _manager;
     _manager.delegate = self;
     
-    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg.jpg"]];
-    [tempImageView setFrame:self.tableView.frame];
+//    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg.jpg"]];
+//    [tempImageView setFrame:self.tableView.frame];
     
-    self.tableView.backgroundView = tempImageView;
+//    self.tableView.backgroundView = tempImageView;
 //    [tempImageView release];
 //    for (NSString* family in [UIFont familyNames])
 //    {
