@@ -143,12 +143,15 @@
 		5A9F24201931585E001ED445 /* Sthlmclub */ = {
 			isa = PBXGroup;
 			children = (
-				5AEB9DD919340E0200E80BD9 /* Controllers */,
-				5AEB9DD819340DE800E80BD9 /* Delegates */,
+				5AEB9DD919340E0200E80BD9 /* View Controllers */,
 				5A9F245519316D71001ED445 /* Models */,
 				5A9F24571931700C001ED445 /* SCCommunicator.h */,
 				5A9F24581931700C001ED445 /* SCCommunicator.m */,
 				5A9F245A19317B04001ED445 /* SCEventBuilder.h */,
+				5A9F24291931585E001ED445 /* SCAppDelegate.h */,
+				5A9F242A1931585E001ED445 /* SCAppDelegate.m */,
+				5A9F245619316F2C001ED445 /* SCCommunicatorDelegate.h */,
+				5A9F245D19317F14001ED445 /* SCEventManagerDelegate.h */,
 				5A9F245B19317B04001ED445 /* SCEventBuilder.m */,
 				5A9F245E1931802B001ED445 /* SCEventManager.h */,
 				5A9F245F1931802B001ED445 /* SCEventManager.m */,
@@ -224,18 +227,7 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
-		5AEB9DD819340DE800E80BD9 /* Delegates */ = {
-			isa = PBXGroup;
-			children = (
-				5A9F24291931585E001ED445 /* SCAppDelegate.h */,
-				5A9F242A1931585E001ED445 /* SCAppDelegate.m */,
-				5A9F245619316F2C001ED445 /* SCCommunicatorDelegate.h */,
-				5A9F245D19317F14001ED445 /* SCEventManagerDelegate.h */,
-			);
-			name = Delegates;
-			sourceTree = "<group>";
-		};
-		5AEB9DD919340E0200E80BD9 /* Controllers */ = {
+		5AEB9DD919340E0200E80BD9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				5A9F242F1931585E001ED445 /* SCMasterViewController.h */,
@@ -243,7 +235,7 @@
 				5A9F24321931585E001ED445 /* SCDetailViewController.h */,
 				5A9F24331931585E001ED445 /* SCDetailViewController.m */,
 			);
-			name = Controllers;
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
