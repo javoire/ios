@@ -3,6 +3,8 @@
 
 target "Sthlmclub" do
 
+    pod 'Mantle', '~> 1.5'
+
 end
 
 target "SthlmclubTests" do
