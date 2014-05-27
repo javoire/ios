@@ -154,22 +154,16 @@
 		5A9F24201931585E001ED445 /* Sthlmclub */ = {
 			isa = PBXGroup;
 			children = (
-				5A9F245619316F2C001ED445 /* SCCommunicatorDelegate.h */,
+				5AEB9DD919340E0200E80BD9 /* Controllers */,
+				5AEB9DD819340DE800E80BD9 /* Delegates */,
 				5A9F24571931700C001ED445 /* SCCommunicator.h */,
 				5A9F24581931700C001ED445 /* SCCommunicator.m */,
 				5A9F245A19317B04001ED445 /* SCEventBuilder.h */,
 				5A9F245B19317B04001ED445 /* SCEventBuilder.m */,
-				5A9F245D19317F14001ED445 /* SCEventManagerDelegate.h */,
 				5A9F245E1931802B001ED445 /* SCEventManager.h */,
 				5A9F245F1931802B001ED445 /* SCEventManager.m */,
 				5A9F245519316D71001ED445 /* Models */,
-				5A9F24291931585E001ED445 /* SCAppDelegate.h */,
-				5A9F242A1931585E001ED445 /* SCAppDelegate.m */,
 				5A9F242C1931585E001ED445 /* Main.storyboard */,
-				5A9F242F1931585E001ED445 /* SCMasterViewController.h */,
-				5A9F24301931585E001ED445 /* SCMasterViewController.m */,
-				5A9F24321931585E001ED445 /* SCDetailViewController.h */,
-				5A9F24331931585E001ED445 /* SCDetailViewController.m */,
 				5A9F24351931585E001ED445 /* Images.xcassets */,
 				5A9F24211931585E001ED445 /* Supporting Files */,
 			);
@@ -239,6 +233,28 @@
 				5A9F246A1932105D001ED445 /* OpenSans-SemiboldItalic.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		5AEB9DD819340DE800E80BD9 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F24291931585E001ED445 /* SCAppDelegate.h */,
+				5A9F242A1931585E001ED445 /* SCAppDelegate.m */,
+				5A9F245619316F2C001ED445 /* SCCommunicatorDelegate.h */,
+				5A9F245D19317F14001ED445 /* SCEventManagerDelegate.h */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		5AEB9DD919340E0200E80BD9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F242F1931585E001ED445 /* SCMasterViewController.h */,
+				5A9F24301931585E001ED445 /* SCMasterViewController.m */,
+				5A9F24321931585E001ED445 /* SCDetailViewController.h */,
+				5A9F24331931585E001ED445 /* SCDetailViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,6 +579,7 @@
 				5A9F244E1931585F001ED445 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A9F244F1931585F001ED445 /* Build configuration list for PBXNativeTarget "SthlmclubTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +588,7 @@
 				5A9F24511931585F001ED445 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
