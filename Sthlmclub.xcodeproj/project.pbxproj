@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0926B6193411CF00E2AD02 /* SCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0926B5193411CF00E2AD02 /* SCEvent.m */; };
+		5A0926BA1934157000E2AD02 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A0926B91934157000E2AD02 /* bg.jpg */; };
 		5A9F241B1931585E001ED445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F241A1931585E001ED445 /* Foundation.framework */; };
 		5A9F241D1931585E001ED445 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F241C1931585E001ED445 /* CoreGraphics.framework */; };
 		5A9F241F1931585E001ED445 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F241E1931585E001ED445 /* UIKit.framework */; };
@@ -22,7 +24,6 @@
 		5A9F243F1931585F001ED445 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F241E1931585E001ED445 /* UIKit.framework */; };
 		5A9F24471931585F001ED445 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F24451931585F001ED445 /* InfoPlist.strings */; };
 		5A9F24491931585F001ED445 /* SthlmclubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F24481931585F001ED445 /* SthlmclubTests.m */; };
-		5A9F245419316D6C001ED445 /* SCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F245319316D6C001ED445 /* SCEvent.m */; };
 		5A9F24591931700C001ED445 /* SCCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F24581931700C001ED445 /* SCCommunicator.m */; };
 		5A9F245C19317B04001ED445 /* SCEventBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F245B19317B04001ED445 /* SCEventBuilder.m */; };
 		5A9F24601931802B001ED445 /* SCEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F245F1931802B001ED445 /* SCEventManager.m */; };
@@ -37,7 +38,6 @@
 		5A9F24731932105D001ED445 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F24691932105D001ED445 /* OpenSans-Semibold.ttf */; };
 		5A9F24741932105D001ED445 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F246A1932105D001ED445 /* OpenSans-SemiboldItalic.ttf */; };
 		5A9F247819321270001ED445 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F247719321270001ED445 /* Oswald-Bold.ttf */; };
-		5A9F247A19321E87001ED445 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F247919321E87001ED445 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A0926B4193411CF00E2AD02 /* SCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCEvent.h; sourceTree = "<group>"; };
+		5A0926B5193411CF00E2AD02 /* SCEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCEvent.m; sourceTree = "<group>"; };
+		5A0926B91934157000E2AD02 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = Sthlmclub/Assets/Images/bg.jpg; sourceTree = "<group>"; };
 		5A9F24171931585E001ED445 /* Sthlmclub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sthlmclub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9F241A1931585E001ED445 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A9F241C1931585E001ED445 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,8 +75,6 @@
 		5A9F24441931585F001ED445 /* SthlmclubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SthlmclubTests-Info.plist"; sourceTree = "<group>"; };
 		5A9F24461931585F001ED445 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A9F24481931585F001ED445 /* SthlmclubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SthlmclubTests.m; sourceTree = "<group>"; };
-		5A9F245219316D6C001ED445 /* SCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCEvent.h; path = Models/SCEvent.h; sourceTree = "<group>"; };
-		5A9F245319316D6C001ED445 /* SCEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCEvent.m; path = Models/SCEvent.m; sourceTree = "<group>"; };
 		5A9F245619316F2C001ED445 /* SCCommunicatorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCommunicatorDelegate.h; sourceTree = "<group>"; };
 		5A9F24571931700C001ED445 /* SCCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommunicator.h; sourceTree = "<group>"; };
 		5A9F24581931700C001ED445 /* SCCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommunicator.m; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		5A9F24691932105D001ED445 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		5A9F246A1932105D001ED445 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		5A9F247719321270001ED445 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
-		5A9F247919321E87001ED445 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,13 +156,13 @@
 			children = (
 				5AEB9DD919340E0200E80BD9 /* Controllers */,
 				5AEB9DD819340DE800E80BD9 /* Delegates */,
+				5A9F245519316D71001ED445 /* Models */,
 				5A9F24571931700C001ED445 /* SCCommunicator.h */,
 				5A9F24581931700C001ED445 /* SCCommunicator.m */,
 				5A9F245A19317B04001ED445 /* SCEventBuilder.h */,
 				5A9F245B19317B04001ED445 /* SCEventBuilder.m */,
 				5A9F245E1931802B001ED445 /* SCEventManager.h */,
 				5A9F245F1931802B001ED445 /* SCEventManager.m */,
-				5A9F245519316D71001ED445 /* Models */,
 				5A9F242C1931585E001ED445 /* Main.storyboard */,
 				5A9F24351931585E001ED445 /* Images.xcassets */,
 				5A9F24211931585E001ED445 /* Supporting Files */,
@@ -202,8 +202,8 @@
 		5A9F245519316D71001ED445 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5A9F245219316D6C001ED445 /* SCEvent.h */,
-				5A9F245319316D6C001ED445 /* SCEvent.m */,
+				5A0926B4193411CF00E2AD02 /* SCEvent.h */,
+				5A0926B5193411CF00E2AD02 /* SCEvent.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 		5A9F247519321063001ED445 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A9F247919321E87001ED445 /* bg.jpg */,
+				5A0926B91934157000E2AD02 /* bg.jpg */,
 				5A9F24761932106A001ED445 /* Fonts */,
 			);
 			name = Resources;
@@ -344,10 +344,10 @@
 				5A9F24251931585E001ED445 /* InfoPlist.strings in Resources */,
 				5A9F24711932105D001ED445 /* OpenSans-LightItalic.ttf in Resources */,
 				5A9F246B1932105D001ED445 /* OpenSans-Bold.ttf in Resources */,
-				5A9F247A19321E87001ED445 /* bg.jpg in Resources */,
 				5A9F242E1931585E001ED445 /* Main.storyboard in Resources */,
 				5A9F24701932105D001ED445 /* OpenSans-Light.ttf in Resources */,
 				5A9F246C1932105D001ED445 /* OpenSans-BoldItalic.ttf in Resources */,
+				5A0926BA1934157000E2AD02 /* bg.jpg in Resources */,
 				5A9F246D1932105D001ED445 /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,10 +371,10 @@
 				5A9F242B1931585E001ED445 /* SCAppDelegate.m in Sources */,
 				5A9F24271931585E001ED445 /* main.m in Sources */,
 				5A9F245C19317B04001ED445 /* SCEventBuilder.m in Sources */,
+				5A0926B6193411CF00E2AD02 /* SCEvent.m in Sources */,
 				5A9F24341931585E001ED445 /* SCDetailViewController.m in Sources */,
 				5A9F24591931700C001ED445 /* SCCommunicator.m in Sources */,
 				5A9F24601931802B001ED445 /* SCEventManager.m in Sources */,
-				5A9F245419316D6C001ED445 /* SCEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
